@@ -1,0 +1,63 @@
+package com.company.demo1;
+
+import java.util.ArrayList;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        //Ejercicio if
+
+        var numeroIf = 1;
+
+        if (numeroIf < 0) {
+            System.out.println("Es negativo");
+        } else {
+            System.out.println("Es positivo");
+        }
+
+        //Ejercicio while
+
+        var numeroWhile = 0;
+
+        while (numeroWhile < 3) {
+            numeroWhile = numeroWhile + 1;
+            System.out.println(numeroWhile);
+        }
+
+        //Ejercicio do
+
+        do {
+            System.out.println(numeroWhile);
+            numeroWhile = numeroWhile + 1;
+        } while (numeroWhile < 3);
+
+        //Ejercicio for
+
+        for (var numeroFor = 0; numeroFor <= 3; numeroFor = numeroFor + 1){
+            System.out.println(numeroFor);
+        }
+
+        //Ejercicio switch
+
+        var estación = "otoño";
+
+        switch (estación) {
+            case "primavera":
+                System.out.println("Es primavera");
+                break;
+            case "verano":
+                System.out.println("Es verano");
+                break;
+            case "otoño":
+                System.out.println("Es otoño");
+                break;
+            case "invierno":
+                System.out.println("Es invierno");
+                break;
+            default:
+                System.out.println("404 estación not found");
+        }
+    }
+
+    }
